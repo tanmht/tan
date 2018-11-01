@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="swiper-3.4.2.min.css"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--苹果强制全屏显示-->
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--强制全屏显示-->
+		<meta name="full-screen" content="yes"/>
+		<!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!--告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta name="format-detection" content="telephone=no"/>
+		<!--告诉设备忽略将页面中的地址识别 -->
+		<meta name="format-detection" content="address=no"/>
+		
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header1{
+			width: 100%;
+			height: .5rem;
+			background: #e61414;
+			font-size: .3rem;
+			color: white;
+			display: flex;
+			justify-content: space-between;
+			
+			
+		}
+		.header1 div{
+			margin-top: .1rem;
+		}
+		
+		.zhongjie{
+			width: 100%;
+			height: .4rem;
+		  color: gray;
+		}
+		.zhongjie ul{
+			list-style: none;
+			font-size: .18rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.di img{
+			width: 100%;
+			height: 2rem;
+		}
+		.ao ul{
+			list-style: none;
+			font-size: .1rem;
+			text-align: center;
+		}
+		.ao ul li{
+			width: .95rem;
+			height: 1.28rem;
+			
+			float: left;
+		}
+		.clear{clear:both;}
+		.dibu{
+			width: 100%;
+			height: .6rem;
+			background: #f8f5f5;
+		}
+		.dibu ul{
+			list-style: none;
+			font-size: .12rem;
+			display: flex;
+			justify-content: space-around;
+		}
+		.dibu ul li{
+			width: .53rem;
+			height: .6rem;
+			text-align: center;
+			
+		}
+		.dibu ul li img{
+			width: .4rem;
+			height: .4rem;
+		}
+	</style>
+
+	<body>
+		<div class="header1">
+			<div>
+				<
+			</div>
+			<div>
+				聚划算
+			</div>
+			<div style="color: black;">
+				<img src="聚划算/2017-06-01_161502.png" />
+				<span class="sp">...</span>
+			</div>
+		</div>
+		<!--中间-->
+		<div class="zhongjie">
+			<ul>
+				<li>全部</li>
+				<li>女装</li>
+				<li>男装</li>
+				<li>鞋包</li>
+				<li>运动</li>
+				<li>内衣饰品</li>
+				<li>》</li>
+			</ul>
+			
+		</div>
+		<!--大图-->
+		<div class="di">
+			<img src="聚划算/2017-06-01_161536.png" />
+		</div>
+		<div class="di">
+			<img src="聚划算/2017-06-01_161610.png" />
+		</div>
+		<div class="ao">
+			<ul class="clear">
+				<li>
+					<p>非常大牌</p>
+					<p>大牌尖货抄底价</p>
+					<p>型男毕败清单</p>
+				</li>
+				<li>
+					<img src="聚划算/2017-06-01_161633.png" />
+				</li>
+				<li>
+					<h3>聚名品</h3>
+					<p>全球奢品折扣</p>
+					<img src="聚划算/2017-06-01_161646.png" />
+				</li>
+				<li>
+					<h3>聚名品</h3>
+					<p>全球奢品折扣</p>
+					<img src="聚划算/2017-06-01_161703.png" />
+				</li>
+				<li>
+				    <p>全球精选</p>
+					<p>一元起尝</p>
+					<p>澳大利奥</p>
+				</li>
+				<li>
+					<img src="聚划算/2017-06-01_161725.png" />
+				</li>
+				<li>
+					<img src="聚划算/2017-06-01_161751.png" />
+				</li>
+				
+			</ul>
+		</div>
+		<!--底部-->
+		<div>
+			<img src="聚划算/2017-06-01_161806.png" />
+		</div>
+		<div class="dibu">
+			<ul>
+				<li>
+					<img src="聚划算/2017-06-01_161823.png" />
+					<p>今日</p>
+				</li>
+				<li>
+					<img src="聚划算/2017-06-01_161823.png" />
+					<p>品牌</p>
+				</li>
+				<li>
+					<img src="聚划算/2017-06-01_161823.png" />
+					<p>聚透</p>
+				</li>
+				<li>
+					<img src="聚划算/2017-06-01_161823.png" />
+					<p>我的</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+  <script src="swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  	(function(doc,win){  
+    	 var docEl =doc.documentElement,  
+             resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',  
+             recalc = function(){  
+                 var clientWidth = docEl.clientWidth>750 ? 750 :docEl.clientWidth;  
+                 if (!clientWidth) {return};  
+                 docEl.style.fontSize = 100 * (clientWidth/403) + 'px';  
+             };  
+	     recalc();  
+	     if (!doc.addEventListener) return;  
+	     win.addEventListener(resizeEvt, recalc, false);  
+	     doc.addEventListener('DOMContentLoaded', recalc, false);  
+	 })(document,window) 
+	 
+  </script>
+</html>
